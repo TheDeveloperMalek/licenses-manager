@@ -1,0 +1,62 @@
+# Reproducible .NET build and test outputs (not vendored wwwroot libraries).
+**/[Bb]in/
+**/[Oo]bj/
+**/TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Per-user IDE state.
+.vs/
+.idea/
+*.user
+*.suo
+
+# Real application settings: only this reviewed placeholder template is shared.
+**/appsettings*.json
+!**/appsettings.example.json
+*.local.json
+*.local.jsonc
+
+# Environment files and credential stores. Templates must contain placeholders.
+.env
+.env.*
+!.env.example
+!.env.template
+*.env
+!*.env.example
+!*.env.template
+.secrets/
+**/secrets.json
+**/credentials.json
+**/auth.json
+
+# Private keys and certificate/key stores; public certificates need review.
+*.key
+*.pem
+*.pfx
+*.p12
+*.jks
+*.keystore
+*.snk
+id_rsa
+id_ed25519
+
+# Private local runtime data, logs, dumps, and backups.
+*.log
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.dmp
+*.dump
+*.backup
+*.bak
+*.tmp
+
+# Keep AGENTS.md, opencode.jsonc, and durable .opencode assets visible.
+# No project-local OpenCode runtime directories existed at WU-01 inspection.
+# Review actual runtime/export paths before adding narrow exclusions; never
+# ignore .opencode/ or .opencode/state/ wholesale.
